@@ -18,6 +18,20 @@ end
 
 p client
 
+# Ca va tweeter Bonjour Monde #WARMUP --> Pour correcteur: Si ça bug, veuillez supprimer cette partie jusqu'a # LIKE LES POST D'UNE LISTE DE NOMS. THX
+
+def Hello(tweet)
+  client.update(tweet)
+end
+
+# Ca va follow un array de personnes #WARMUP
+
+def follow(person)
+  person.each do |person|
+  client.follow(person)
+  end
+end
+
 # LIKE LES POST D'UNE LISTE DE NOMS 
 
 myArray = ["@HiTech_lexpress","@bcondominas"] #array de noms
